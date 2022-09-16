@@ -17,7 +17,9 @@ declare var jQuery: any;
 })
 export class AppComponent {
   pdfSrc: any | string | PDFSource | ArrayBuffer =
+    // 'https://www.africau.edu/images/default/sample.pdf';
     'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf';
+  // 'https://drive.google.com/file/d/1-0dGYcgBcK4yxPdviyOFEs3NtfMJzLKv';
 
   error: any;
   page = 1;
@@ -40,6 +42,13 @@ export class AppComponent {
 
   @ViewChild(PdfViewerComponent)
   private pdfComponent!: PdfViewerComponent;
+
+  constructor() {
+    fetch(this.pdfSrc)
+      .then((res) => {
+        console.log(res);
+      });
+  }
 
   openLocalFile() {
     jQuery('#file').trigger('click');
