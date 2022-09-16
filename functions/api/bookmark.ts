@@ -1,3 +1,3 @@
-export const onRequestPost = async (request: any) => {
+export const onRequest = async (request: any) => {
   return new Response(`Hello world`);
 };

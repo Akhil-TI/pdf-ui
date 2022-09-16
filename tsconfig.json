@@ -22,6 +22,7 @@
     ],
     "types": ["@cloudflare/workers-types"],
   },
+  "exclude": ["functions/**/*"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
