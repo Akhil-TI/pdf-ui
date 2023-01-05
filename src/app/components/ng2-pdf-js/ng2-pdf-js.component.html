@@ -1,0 +1,25 @@
+<!-- <ng2-pdfjs-viewer [pdfSrc]="path" cursor="hand" oncopy="return false"></ng2-pdfjs-viewer> -->
+
+<!-- <button
+  (click)="openPdf()"
+  style="
+    background-color: greenyellow;
+    font-weight: bold;
+    font-style: italic;
+    height: 50px;
+  "
+>
+  Open PDF in new 
+</button> -->
+<!-- #externalPdfViewer -->
+<div class="pdf-container">
+  <ng2-pdfjs-viewer
+    class="unselectable"
+    oncopy="return false"
+    [externalWindow]="false"
+    [pdfSrc]="path"
+    cursor="hand"
+    [download]="false"
+    [print]="false"
+  ></ng2-pdfjs-viewer>
+</div>

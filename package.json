@@ -21,6 +21,8 @@
     "@cloudflare/workers-types": "^3.16.0",
     "ng-inline-svg": "^13.1.2",
     "ng2-pdf-viewer": "^9.1.2",
+    "ng2-pdfjs-viewer": "^14.0.0",
+    "ngx-extended-pdf-viewer": "^15.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "wrangler": "^2.1.4",

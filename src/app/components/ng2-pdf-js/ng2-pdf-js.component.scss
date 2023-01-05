@@ -1,0 +1,17 @@
+@media print {
+  ng2-pdfjs-viewer {
+    display: none;
+  }
+}
+
+.unselectable {
+  -webkit-user-select: none;
+
+  -ms-user-select: none;
+
+  user-select: none;
+}
+
+.pdf-container {
+  height: 100% !important;
+}
