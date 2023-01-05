@@ -12,10 +12,9 @@
   Open PDF in new 
 </button> -->
 <!-- #externalPdfViewer -->
-<div class="pdf-container">
+<div class="pdf-container" oncopy="return false">
   <ng2-pdfjs-viewer
     class="unselectable"
-    oncopy="return false"
     [externalWindow]="false"
     [pdfSrc]="path"
     cursor="hand"
